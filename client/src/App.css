@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+.reg-username{
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+
+.reg-password{
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+
+
+p{
+  font-size: .3rem;
+  padding: 20px 0;
+}

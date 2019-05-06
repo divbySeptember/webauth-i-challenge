@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import axios from "axios";
 
 export class Register extends Component {
@@ -40,8 +41,11 @@ export class Register extends Component {
     return (
       <div>
         <h2>Join Now and Get Your Free Beat!</h2>
-        <form className="form" onSubmit={this.register}>
-          <input
+        <Form className="form" onSubmit={this.register}>
+        <FormGroup row>
+          <Label> Username</Label>
+          <Col sm={10}>
+          <Input
             className="reg-username"
             type="type"
             name="username"
@@ -51,7 +55,12 @@ export class Register extends Component {
             autoComplete="off"
             required
           />
-          <input
+          </Col>
+          </FormGroup>
+          <FormGroup row>
+          <Label> Password</Label>
+          <Col sm={10}>
+          <Input
             className="reg-password"
             type="password"
             name="password"
@@ -61,8 +70,14 @@ export class Register extends Component {
             autoComplete="off"
             required
           />
-          <button>Register Now</button>
-        </form>
+          </Col>
+          </FormGroup>
+          <FormGroup row>
+         <Col sm={{ size: 10, offset: 2 }}>
+            <Button outline color="primary" size="lg">Register Now</Button>
+          </Col>
+         </FormGroup>
+        </Form>
         <p className="terms">
           By using Div By September, LLC you agree to the <b>Terms of Service</b> and{" "}
           <b>Privacy Policy</b>
