@@ -39,7 +39,7 @@ export class Register extends Component {
   render() {
     return (
       <div>
-        <h2>Join Now and Get Your Free Score!</h2>
+        <h2>Join Now and Get Your Free Beat!</h2>
         <form className="form" onSubmit={this.register}>
           <input
             className="reg-username"
