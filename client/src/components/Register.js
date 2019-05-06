@@ -64,7 +64,7 @@ export class Register extends Component {
           <button>Register Now</button>
         </form>
         <p className="terms">
-          By using LifeGPA you agree to the <b>Terms of Service</b> and{" "}
+          By using Div By September, LLC you agree to the <b>Terms of Service</b> and{" "}
           <b>Privacy Policy</b>
         </p>
       </div>
